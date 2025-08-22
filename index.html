@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Netflix India – Watch TV Shows Online, Watch Movies Online </title>
     <link rel = "stylesheet" href = "style.css" > 
+    <header>
+ 
+</header>
+
 </head>
 
 <body>
@@ -16,8 +20,16 @@
                 <img width="53" src="Assets/Images/logo.svg" alt=" " > 
             </span>
             <div> 
-                <button class="btn"> English </button>
-                <button class="btn btn-red-sm"> Sign In </button>
+                <div class="dropdown">
+                <button class="dropbtn">🌐 English ▾
+                <div class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">हिन्दी</a>
+                <a href="#">Español</a>
+                </div>
+                </div> 
+                <button class="btn btn-red-sm"> Sign In </button> </button>
+
             </div>
         </nav>
         <div class="box">
@@ -27,8 +39,9 @@
             <span>Starts at ₹149. Cancel at any time.</span>
             <span>Ready to watch? Enter your email to create or restart your membership.</span>    
             <div class="hero-buttons">
-                <input type="text" placeholder="Email Address">
-                <button class="btn btn-red">Get Started &gt;  </button>
+                <form class="signup">
+                <input type="email" placeholder="Email Address" required>
+                <button type ="submit"  class="btn btn-red">Get Started &gt;  </button> </form>
             </div>                
         </div>
 
